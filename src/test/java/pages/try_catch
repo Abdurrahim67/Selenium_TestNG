@@ -1,0 +1,9 @@
+ // Basarili giris yapilamadigini test edin
+
+        try {
+            String actualText = facebookPage.girisYapilamadi.getText();
+            Assert.assertTrue(actualText.contains("Facebook"));
+        } catch (Exception e) {
+            String acturalText2 = facebookPage.getGirisYapilamadiEvetBendim.getText();
+            Assert.assertTrue(acturalText2.contains("Evet, Devam Et"));
+        }
