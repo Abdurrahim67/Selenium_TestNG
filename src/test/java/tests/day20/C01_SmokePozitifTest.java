@@ -1,4 +1,4 @@
-package tests.day18;
+package tests.day20;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -8,13 +8,12 @@ import pages.HmcPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C03_ConfigReader_PositiveTest {
+public class C01_SmokePozitifTest {
 
     //Bir Class olustur : PositiveTest
     //2) Bir test method olustur positiveLoginTest()  https://www.hotelmycamp.com/ adresine git  login butonuna bas
     //test data username: manager ,  test data password : Manager1!
     //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
-
 
     @Test
     public void test01() {
@@ -35,7 +34,6 @@ public class C03_ConfigReader_PositiveTest {
         //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hmcPage.girisYapildi.isDisplayed());
         Driver.closeDriver();
-
 
     }
 }

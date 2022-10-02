@@ -1,27 +1,14 @@
-package tests.day19;
+package tests.day20;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.HmcPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C03_NegativeTest {
-
-    //NegativeTest 3 Farkli test Methodunda 3 senaryoyu test et
-    //- yanlisSifre
-    //- yanlisKulllanici
-    //- yanlisSifreKullanici
-    //test data yanlis username: manager1 , yanlis password : manager1
-    //2) https://www.hotelmycamp.com adresine git
-    //3) Login butonuna bas
-    //4) Verilen senaryolar ile giris yapilamadigini test et
-    //test data username: manager ,
-    //test data password : Manager1!
-
+public class C02_SmokeNegativTest {
     //NegativeTest 3 Farkli test Methodunda 3 senaryoyu test et
     //- yanlisSifre
     //- yanlisKulllanici
@@ -87,6 +74,6 @@ public class C03_NegativeTest {
         //Sayfayı kapatınız
         Driver.closeDriver();
     }
-
 }
+
 
