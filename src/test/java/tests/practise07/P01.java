@@ -42,9 +42,8 @@ public class P01 {
         //Tüm yapılacakları sil.
         webUniversityPage.deleteButtons.forEach(WebElement::click);
 
-
-        Thread.sleep(3000);
         //Tüm yapılacakların silindiğini doğrulayın.
+        Thread.sleep(3000);
         Assert.assertEquals(webUniversityPage.todosWebElement.size(),0);
 
 

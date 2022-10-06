@@ -18,7 +18,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
     protected String tarih;
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = "gb1")
     public void setUp() {
 
         WebDriverManager.chromedriver().setup();
@@ -34,10 +34,10 @@ public abstract class TestBaseBeforeMethodAfterMethod {
 
     }
 
-    @AfterMethod
+    @AfterMethod(groups = "gb1")
     public void tearDown() throws InterruptedException {
 
-      // driver.quit();
+   //    driver.quit();
 
     }
 

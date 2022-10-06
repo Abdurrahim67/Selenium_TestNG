@@ -16,7 +16,7 @@ public class C03_ConfigReader_PositiveTest {
     //Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
 
 
-    @Test
+    @Test(groups = "gp2")
     public void test01() {
         //https://www.hotelmycamp.com/ adresine git  login butonuna bas
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
